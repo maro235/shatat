@@ -1,0 +1,222 @@
+*{
+    padding:0px ;
+    margin:0px ;
+}
+body{
+    background-image: url(logo.avif);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100%;
+    font-family: Arial, sans-serif;
+}
+.head{
+    height: 60px ;
+    width: 100%;
+    background-color: rgb(20, 20, 144);
+    box-shadow: 0px  0px 10px black;
+}
+.head img{
+    height: 100px ;
+    width: 100px ;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px ;
+    left: 10px ;
+}
+.head button{
+    margin-top: 3px ;
+    margin-right: 10px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.boton-elegante {
+    padding: 15px 30px;
+    border: 1px solid #2c2c2c;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 15px ;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+  .boton-elegante::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 1s ease;
+  }
+  
+  .boton-elegante:hover::after {
+    transform: scale(4);
+  }
+  
+  .boton-elegante:hover {
+    border-color: #666666;
+    background: #292929;
+  }
+
+  .head i {
+    font-size: 30px ;
+    color:#ee4e4ebe;
+    float: right;
+    margin-top: 12px ;
+    margin-right: 20px ;
+   
+}
+  
+.choose h1 {
+    color: white;
+    margin-top: 35px ;
+    margin-bottom: 50px ;
+}
+.card {
+    --background: linear-gradient(to right, #74ebd5 0%, #acb6e5 100%);
+    width: 190px;
+    height: 254px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #74ebd5;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card::before,
+  .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    z-index: -1;
+  }
+  
+  .card::before {
+    background: linear-gradient(to bottom right, #f6d365 0%, #fda085 100%);
+    transform: rotate(2deg);
+  }
+  
+  .card::after {
+    background: linear-gradient(to top right, #84fab0 0%, #8fd3f4 100%);
+    transform: rotate(-2deg);
+  }
+  
+  .card-info {
+    --color: #292b2c;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: 0.7rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .card .title {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+  
+  .card:hover::before,
+  .card:hover::after {
+    opacity: 0;
+  }
+  
+  .card:hover .card-info {
+    color: #74ebd5;
+    transition: color 1s;
+  }
+.card .card-info p {
+    color: wheat;
+    position: absolute ;
+    top: 10px ;
+} 
+.card .card-info img{
+    position: absolute ;
+    top: 70px ;
+    left: 50px ;
+    width: 100px ;
+    height: 100px ;
+    border-radius: 50%;
+}
+.card{
+    width: 500px ;
+    margin-top:150px ;
+}
+button {
+    background: transparent;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    perspective: 30rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+  }
+  
+  button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+      320deg,
+      rgba(0, 140, 255, 0.678),
+      rgba(128, 0, 128, 0.308)
+    );
+    z-index: 1;
+    transition: background 3s;
+  }
+  
+  button:hover::before {
+    animation: rotate 1s;
+    transition: all 0.5s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateY(180deg);
+    }
+  
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+.card .card-info button{ 
+    position: absolute;
+    top: 40%;
+    right: 100px ;
+}  
+.card .card-info p {
+    color: #8fd3f4 ;
+    font-size: x-large;
+    font-weight: bold;
+}
